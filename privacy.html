@@ -6,28 +6,42 @@
 <title>Privacy Policy - Satmofix</title>
 <style>
 body{max-width:850px;margin:2rem auto;padding:0 16px;font-family:Arial,sans-serif;line-height:1.7;color:#222;}
-h1{text-align:center;}
-.lang-switch{margin-bottom:2rem;text-align:center;}
-button{padding:6px 12px;margin:0 4px;cursor:pointer;border:1px solid #333;background:#fff;border-radius:4px;font-size:16px;}
+h1{text-align:center;font-size:1.6rem;}
+.lang-switch{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-bottom:2rem;}
+button{padding:6px 12px;cursor:pointer;border:1px solid #333;background:#fff;border-radius:4px;font-size:15px;line-height:1.2;}
 button.active{background:#222;color:#fff;}
 .section{display:none;}
 .section.active{display:block;}
 p,li{margin:0.7rem 0;font-size:17px;}
-h2{margin-top:28px;}
+h2{margin-top:28px;font-size:1.15rem;}
+ul{padding-inline-start:1.4rem;}
 </style>
 </head>
 <body>
-<h1>Privacy Policy / 隐私政策</h1>
+<h1 id="policy-title">Privacy Policy</h1>
 <div class="lang-switch">
-<button class="active" onclick="switchLang('en')">English</button>
-<button onclick="switchLang('zh')">中文</button>
+<button class="active" data-lang="en" onclick="switchLang('en',this)">English</button>
+<button data-lang="zh" onclick="switchLang('zh',this)">中文</button>
+<button data-lang="es" onclick="switchLang('es',this)">Español</button>
+<button data-lang="pt-PT" onclick="switchLang('pt-PT',this)">Português (PT)</button>
+<button data-lang="pt-BR" onclick="switchLang('pt-BR',this)">Português (BR)</button>
+<button data-lang="ru" onclick="switchLang('ru',this)">Русский</button>
+<button data-lang="ja" onclick="switchLang('ja',this)">日本語</button>
+<button data-lang="de" onclick="switchLang('de',this)">Deutsch</button>
+<button data-lang="fr" onclick="switchLang('fr',this)">Français</button>
+<button data-lang="it" onclick="switchLang('it',this)">Italiano</button>
+<button data-lang="ko" onclick="switchLang('ko',this)">한국어</button>
+<button data-lang="tr" onclick="switchLang('tr',this)">Türkçe</button>
+<button data-lang="hu" onclick="switchLang('hu',this)">Magyar</button>
+<button data-lang="ar" onclick="switchLang('ar',this)">العربية</button>
+<button data-lang="fa" onclick="switchLang('fa',this)">فارسی</button>
 </div>
 
 <div id="en" class="section active">
 <p><strong>Effective Date: 2026-11-22</strong></p>
 <h2>1. Overview</h2>
-<p>Satmofix is a local GNSS/GPS tool for coordinates, waypoints and track recording. All core features work offline. The app may use system network-assisted positioning (Wi‑Fi / cell tower) to get a faster position fix. <strong>No user data will be collected, uploaded, transmitted or shared with servers or third parties.</strong></p>
-<h2>2. Permissions & Local Data</h2>
+<p>Satmofix is a local GNSS/GPS tool for coordinates, waypoints and track recording. All core features work offline. The app may use system network-assisted positioning (Wi-Fi / cell tower) to get a faster position fix. <strong>No user data will be collected, uploaded, transmitted or shared with servers or third parties.</strong></p>
+<h2>2. Permissions &amp; Local Data</h2>
 <p>Precise location permission is required for core functions:</p>
 <ul>
 <li>Show real-time GNSS coordinates</li>
@@ -79,12 +93,404 @@ h2{margin-top:28px;}
 <p>如果您对隐私条款有疑问，可以联系邮箱：satmofix@outlook.com</p>
 </div>
 
+<div id="es" class="section">
+<p><strong>Fecha de entrada en vigor: 2026-11-22</strong></p>
+<h2>1. Información general</h2>
+<p>Satmofix es una herramienta GNSS/GPS totalmente local para coordenadas, puntos de referencia y registro de rutas. Todas las funciones principales funcionan sin conexión. La aplicación puede utilizar la localización asistida por la red del sistema (Wi-Fi / estación base) para obtener una posición fijada más rápido. <strong>No se recopilará, cargará, transmitirá ni compartirá ningún dato del usuario con servidores o terceros.</strong></p>
+<h2>2. Permisos y datos locales</h2>
+<p>La aplicación solo solicita el permiso de ubicación precisa para las funciones principales:</p>
+<ul>
+<li>Mostrar coordenadas GNSS en tiempo real</li>
+<li>Añadir y guardar puntos de referencia</li>
+<li>Registrar rutas</li>
+<li>Realizar cálculos de posición</li>
+</ul>
+<p>Todas las coordenadas, los puntos, las rutas y los datos de usuario se guardan únicamente en su dispositivo. Los datos nunca se subirán a internet ni a la nube.</p>
+<h2>3. Sin recopilación de datos por terceros</h2>
+<ul>
+<li>Sin anuncios</li>
+<li>Sin SDK de seguimiento, estadísticas o análisis de terceros</li>
+<li>Sin recopilación de datos del dispositivo ni del comportamiento</li>
+<li>Sin compartir la ubicación, los puntos o las rutas con terceros</li>
+</ul>
+<h2>4. Control del usuario</h2>
+<p>Puede eliminar en cualquier momento todas las rutas, los puntos y los datos locales guardados dentro de la aplicación. El desarrollador no tiene forma de acceder ni de consultar sus datos de ubicación locales.</p>
+<h2>5. Cambios en la política</h2>
+<p>Podemos actualizar esta política de privacidad ocasionalmente. Las actualizaciones se publicarán en esta página.</p>
+<h2>6. Contacto</h2>
+<p>Si tiene dudas sobre esta política de privacidad, contacte con: satmofix@outlook.com</p>
+</div>
+
+<div id="pt-PT" class="section">
+<p><strong>Data de entrada em vigor: 2026-11-22</strong></p>
+<h2>1. Visão geral</h2>
+<p>O Satmofix é uma ferramenta GNSS/GPS totalmente local para coordenadas, pontos de referência e registo de rotas. Todas as funcionalidades principais funcionam offline. A aplicação pode utilizar a localização assistida pela rede do sistema (Wi-Fi / estação base) para obter uma posição mais rapidamente. <strong>Nenhum dado do utilizador será recolhido, carregado, transmitido ou partilhado com servidores ou terceiros.</strong></p>
+<h2>2. Permissões e dados locais</h2>
+<p>A aplicação solicita apenas a permissão de localização precisa para as funcionalidades principais:</p>
+<ul>
+<li>Mostrar coordenadas GNSS em tempo real</li>
+<li>Adicionar e guardar pontos de referência</li>
+<li>Registar rotas</li>
+<li>Efetuar cálculos de posição</li>
+</ul>
+<p>Todas as coordenadas, os pontos, as rotas e os dados do utilizador são guardados apenas no seu dispositivo. Os dados nunca serão carregados para a internet nem para a nuvem.</p>
+<h2>3. Sem recolha de dados por terceiros</h2>
+<ul>
+<li>Sem publicidade</li>
+<li>Sem SDK de rastreio, estatísticas ou análise de terceiros</li>
+<li>Sem recolha de dados do dispositivo ou do comportamento</li>
+<li>Sem partilha da localização, dos pontos ou das rotas com terceiros</li>
+</ul>
+<h2>4. Controlo pelo utilizador</h2>
+<p>Pode eliminar em qualquer momento todas as rotas, os pontos e os dados locais guardados na aplicação. O programador não tem qualquer forma de aceder aos seus dados de localização locais nem de os consultar.</p>
+<h2>5. Alterações à política</h2>
+<p>Podemos atualizar esta política de privacidade periodicamente. As atualizações serão publicadas nesta página.</p>
+<h2>6. Contacto</h2>
+<p>Se tiver dúvidas sobre esta política de privacidade, contacte: satmofix@outlook.com</p>
+</div>
+
+<div id="pt-BR" class="section">
+<p><strong>Data de entrada em vigor: 2026-11-22</strong></p>
+<h2>1. Visão geral</h2>
+<p>O Satmofix é uma ferramenta GNSS/GPS totalmente local para coordenadas, pontos de referência e registro de trajetos. Todas as funções principais funcionam offline. O aplicativo pode usar a localização assistida pela rede do sistema (Wi-Fi / estação base) para obter uma posição mais rapidamente. <strong>Nenhum dado do usuário será coletado, enviado, transmitido ou compartilhado com servidores ou terceiros.</strong></p>
+<h2>2. Permissões e dados locais</h2>
+<p>O aplicativo solicita apenas a permissão de localização precisa para as funções principais:</p>
+<ul>
+<li>Mostrar coordenadas GNSS em tempo real</li>
+<li>Adicionar e salvar pontos de referência</li>
+<li>Registrar trajetos</li>
+<li>Realizar cálculos de posição</li>
+</ul>
+<p>Todas as coordenadas, os pontos, os trajetos e os dados do usuário são armazenados apenas no seu dispositivo. Os dados nunca serão enviados para a internet nem para a nuvem.</p>
+<h2>3. Sem coleta de dados por terceiros</h2>
+<ul>
+<li>Sem anúncios</li>
+<li>Sem SDK de rastreamento, estatísticas ou análise de terceiros</li>
+<li>Sem coleta de dados do dispositivo ou de comportamento</li>
+<li>Sem compartilhamento de localização, pontos ou trajetos com terceiros</li>
+</ul>
+<h2>4. Controle do usuário</h2>
+<p>Você pode excluir a qualquer momento todos os trajetos, os pontos e os dados locais salvos no aplicativo. O desenvolvedor não tem nenhuma forma de acessar ou visualizar os seus dados de localização locais.</p>
+<h2>5. Alterações na política</h2>
+<p>Podemos atualizar esta política de privacidade periodicamente. As atualizações serão publicadas nesta página.</p>
+<h2>6. Contato</h2>
+<p>Se tiver dúvidas sobre esta política de privacidade, entre em contato: satmofix@outlook.com</p>
+</div>
+
+<div id="ru" class="section">
+<p><strong>Дата вступления в силу: 2026-11-22</strong></p>
+<h2>1. Общие сведения</h2>
+<p>Satmofix — это полностью локальный инструмент GNSS/GPS для работы с координатами, путевыми точками и записи треков. Все основные функции работают без подключения к сети. Приложение может использовать сетевое позиционирование системы (Wi-Fi / базовая станция) для более быстрого определения местоположения. <strong>Никакие пользовательские данные не собираются, не загружаются, не передаются и не передаются серверам или третьим лицам.</strong></p>
+<h2>2. Разрешения и локальные данные</h2>
+<p>Приложение запрашивает только разрешение на точное определение местоположения для основных функций:</p>
+<ul>
+<li>Отображение координат GNSS в реальном времени</li>
+<li>Добавление и сохранение путевых точек</li>
+<li>Запись треков</li>
+<li>Выполнение расчётов местоположения</li>
+</ul>
+<p>Все координаты, путевые точки, треки и пользовательские данные хранятся только на вашем устройстве. Данные никогда не загружаются в интернет или в облако.</p>
+<h2>3. Отсутствие сбора данных третьими лицами</h2>
+<ul>
+<li>Без рекламы</li>
+<li>Без сторонних SDK для отслеживания, статистики и аналитики</li>
+<li>Без сбора данных об устройстве и поведении пользователя</li>
+<li>Без передачи местоположения, путевых точек и треков кому-либо</li>
+</ul>
+<h2>4. Контроль пользователя</h2>
+<p>Вы можете в любой момент удалить все сохранённые треки, путевые точки и локальные данные в приложении. Разработчик не имеет возможности получить доступ к вашим локальным данным о местоположении или просмотреть их.</p>
+<h2>5. Изменения политики</h2>
+<p>Мы можем время от времени обновлять настоящую политику конфиденциальности. Обновления будут опубликованы на этой странице.</p>
+<h2>6. Контакты</h2>
+<p>Если у вас есть вопросы по настоящей политике конфиденциальности, напишите: satmofix@outlook.com</p>
+</div>
+
+<div id="ja" class="section">
+<p><strong>施行日：2026-11-22</strong></p>
+<h2>1. 概要</h2>
+<p>Satmofix は、座標・ウェイポイント・軌跡記録のための完全ローカルな GNSS/GPS ツールです。主要機能はすべてオフラインで動作します。より速く測位を確定するため、システムのネットワーク補助測位（Wi-Fi／基地局）を利用する場合があります。<strong>ユーザーデータは収集・アップロード・送信されず、サーバーや第三者と共有されることもありません。</strong></p>
+<h2>2. 権限とローカルデータ</h2>
+<p>本アプリは主要機能のため、正確な位置情報の権限のみを要求します：</p>
+<ul>
+<li>リアルタイム GNSS 座標の表示</li>
+<li>ウェイポイントの追加・保存</li>
+<li>軌跡の記録</li>
+<li>位置関連の計算</li>
+</ul>
+<p>座標・ウェイポイント・軌跡・ユーザーデータはすべてお使いの端末内にのみ保存されます。データがインターネットやクラウドにアップロードされることはありません。</p>
+<h2>3. 第三者によるデータ収集はなし</h2>
+<ul>
+<li>広告なし</li>
+<li>第三者のトラッキング・統計・解析 SDK なし</li>
+<li>端末情報や行動データの収集なし</li>
+<li>位置・ウェイポイント・軌跡データの第三者提供なし</li>
+</ul>
+<h2>4. ユーザーの管理権</h2>
+<p>保存された軌跡・ウェイポイント・ローカルデータは、アプリ内でいつでも削除できます。開発者は端末内の位置データにアクセスしたり閲覧したりする手段を持ちません。</p>
+<h2>5. ポリシーの変更</h2>
+<p>本プライバシーポリシーは随時更新される場合があります。更新内容は本ページに掲載されます。</p>
+<h2>6. お問い合わせ</h2>
+<p>本ポリシーについてご質問がある場合は、以下までご連絡ください：satmofix@outlook.com</p>
+</div>
+
+<div id="de" class="section">
+<p><strong>Inkrafttreten: 2026-11-22</strong></p>
+<h2>1. Überblick</h2>
+<p>Satmofix ist ein rein lokales GNSS/GPS-Werkzeug für Koordinaten, Wegpunkte und Streckenaufzeichnung. Alle Kernfunktionen arbeiten offline. Die App kann die netzwerkgestützte Positionsbestimmung des Systems (Wi-Fi / Mobilfunkzelle) nutzen, um schneller einen Fix zu erhalten. <strong>Es werden keine Nutzerdaten erhoben, hochgeladen, übertragen oder mit Servern oder Dritten geteilt.</strong></p>
+<h2>2. Berechtigungen und lokale Daten</h2>
+<p>Die App fordert ausschließlich die Berechtigung für den genauen Standort an, um die Kernfunktionen zu ermöglichen:</p>
+<ul>
+<li>Echtzeit-GNSS-Koordinaten anzeigen</li>
+<li>Wegpunkte hinzufügen und speichern</li>
+<li>Strecken aufzeichnen</li>
+<li>Positionsberechnungen durchführen</li>
+</ul>
+<p>Alle Koordinaten, Wegpunkte, Strecken und Nutzerdaten werden ausschließlich auf Ihrem Gerät gespeichert. Daten werden niemals ins Internet oder in die Cloud hochgeladen.</p>
+<h2>3. Keine Datenerhebung durch Dritte</h2>
+<ul>
+<li>Keine Werbung</li>
+<li>Keine Tracking-, Statistik- oder Analyse-SDKs von Dritten</li>
+<li>Keine Erhebung von Geräte- oder Verhaltensdaten</li>
+<li>Keine Weitergabe von Standort-, Wegpunkt- oder Streckendaten an Dritte</li>
+</ul>
+<h2>4. Kontrolle durch den Nutzer</h2>
+<p>Sie können jederzeit alle gespeicherten Strecken, Wegpunkte und lokalen Daten in der App löschen. Der Entwickler hat keine Möglichkeit, auf Ihre lokalen Standortdaten zuzugreifen oder sie einzusehen.</p>
+<h2>5. Änderungen der Richtlinie</h2>
+<p>Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Aktualisierungen werden auf dieser Seite veröffentlicht.</p>
+<h2>6. Kontakt</h2>
+<p>Bei Fragen zu dieser Datenschutzerklärung wenden Sie sich bitte an: satmofix@outlook.com</p>
+</div>
+
+<div id="fr" class="section">
+<p><strong>Date d'entrée en vigueur : 2026-11-22</strong></p>
+<h2>1. Aperçu</h2>
+<p>Satmofix est un outil GNSS/GPS entièrement local pour les coordonnées, les points de repère et l'enregistrement de traces. Toutes les fonctions principales fonctionnent hors ligne. L'application peut utiliser la localisation assistée par le réseau du système (Wi-Fi / station de base) afin d'obtenir une position plus rapidement. <strong>Aucune donnée utilisateur ne sera collectée, téléversée, transmise ni partagée avec des serveurs ou des tiers.</strong></p>
+<h2>2. Autorisations et données locales</h2>
+<p>L'application demande uniquement l'autorisation de localisation précise pour ses fonctions principales :</p>
+<ul>
+<li>Afficher les coordonnées GNSS en temps réel</li>
+<li>Ajouter et enregistrer des points de repère</li>
+<li>Enregistrer des traces</li>
+<li>Effectuer des calculs de position</li>
+</ul>
+<p>Toutes les coordonnées, les points, les traces et les données utilisateur sont stockés uniquement sur votre appareil. Les données ne seront jamais téléversées sur Internet ou dans le cloud.</p>
+<h2>3. Aucune collecte de données par des tiers</h2>
+<ul>
+<li>Aucune publicité</li>
+<li>Aucun SDK tiers de suivi, de statistiques ou d'analyse</li>
+<li>Aucune collecte de données sur l'appareil ou le comportement</li>
+<li>Aucun partage de la localisation, des points ou des traces avec des tiers</li>
+</ul>
+<h2>4. Contrôle de l'utilisateur</h2>
+<p>Vous pouvez supprimer à tout moment l'ensemble des traces, des points de repère et des données locales enregistrés dans l'application. Le développeur n'a aucun moyen d'accéder à vos données de localisation locales ni de les consulter.</p>
+<h2>5. Modifications de la politique</h2>
+<p>Nous pouvons mettre à jour cette politique de confidentialité de temps à autre. Les mises à jour seront publiées sur cette page.</p>
+<h2>6. Contact</h2>
+<p>Pour toute question concernant cette politique de confidentialité, contactez : satmofix@outlook.com</p>
+</div>
+
+<div id="it" class="section">
+<p><strong>Data di entrata in vigore: 2026-11-22</strong></p>
+<h2>1. Panoramica</h2>
+<p>Satmofix è uno strumento GNSS/GPS completamente locale per coordinate, waypoint e registrazione di tracce. Tutte le funzioni principali funzionano offline. L'app può utilizzare il posizionamento assistito dalla rete di sistema (Wi-Fi / cella) per ottenere più rapidamente un fix. <strong>Nessun dato dell'utente sarà raccolto, caricato, trasmesso o condiviso con server o terze parti.</strong></p>
+<h2>2. Autorizzazioni e dati locali</h2>
+<p>L'app richiede solo l'autorizzazione alla posizione precisa per le funzioni principali:</p>
+<ul>
+<li>Mostrare le coordinate GNSS in tempo reale</li>
+<li>Aggiungere e salvare waypoint</li>
+<li>Registrare tracce</li>
+<li>Eseguire calcoli di posizione</li>
+</ul>
+<p>Tutte le coordinate, i waypoint, le tracce e i dati utente sono memorizzati solo sul tuo dispositivo. I dati non saranno mai caricati su Internet o nel cloud.</p>
+<h2>3. Nessuna raccolta dati da terze parti</h2>
+<ul>
+<li>Nessuna pubblicità</li>
+<li>Nessun SDK di tracciamento, statistica o analisi di terze parti</li>
+<li>Nessuna raccolta di dati sul dispositivo o sul comportamento</li>
+<li>Nessuna condivisione di posizione, waypoint o tracce con terzi</li>
+</ul>
+<h2>4. Controllo dell'utente</h2>
+<p>Puoi eliminare in qualsiasi momento tutte le tracce, i waypoint e i dati locali salvati nell'app. Lo sviluppatore non ha alcun modo di accedere o visualizzare i tuoi dati di posizione locali.</p>
+<h2>5. Modifiche alla politica</h2>
+<p>Possiamo aggiornare questa informativa sulla privacy di tanto in tanto. Gli aggiornamenti saranno pubblicati su questa pagina.</p>
+<h2>6. Contatti</h2>
+<p>Per domande su questa informativa sulla privacy, contatta: satmofix@outlook.com</p>
+</div>
+
+<div id="ko" class="section">
+<p><strong>시행일: 2026-11-22</strong></p>
+<h2>1. 개요</h2>
+<p>Satmofix는 좌표, 웨이포인트, 궤적 기록을 위한 완전 로컬 GNSS/GPS 도구입니다. 모든 핵심 기능은 오프라인으로 동작합니다. 더 빠른 측위를 위해 시스템의 네트워크 보조 측위(Wi-Fi / 기지국)를 사용할 수 있습니다. <strong>사용자 데이터는 수집, 업로드, 전송되지 않으며 서버나 제3자와 공유되지 않습니다.</strong></p>
+<h2>2. 권한 및 로컬 데이터</h2>
+<p>이 앱은 핵심 기능을 위해 정확한 위치 권한만 요청합니다:</p>
+<ul>
+<li>실시간 GNSS 좌표 표시</li>
+<li>웨이포인트 추가 및 저장</li>
+<li>궤적 기록</li>
+<li>위치 관련 계산</li>
+</ul>
+<p>모든 좌표, 웨이포인트, 궤적 및 사용자 데이터는 사용자의 기기에만 저장됩니다. 데이터는 인터넷이나 클라우드로 업로드되지 않습니다.</p>
+<h2>3. 제3자 데이터 수집 없음</h2>
+<ul>
+<li>광고 없음</li>
+<li>제3자 추적, 통계, 분석 SDK 없음</li>
+<li>기기 정보 및 사용자 행동 정보 수집 없음</li>
+<li>위치, 웨이포인트, 궤적 데이터를 제3자와 공유하지 않음</li>
+</ul>
+<h2>4. 사용자 통제권</h2>
+<p>앱 내에서 저장된 모든 궤적, 웨이포인트, 로컬 데이터를 언제든지 삭제할 수 있습니다. 개발자는 사용자의 로컬 위치 데이터에 접근하거나 열람할 수 있는 방법이 없습니다.</p>
+<h2>5. 정책 변경</h2>
+<p>본 개인정보 처리방침은 수시로 업데이트될 수 있습니다. 업데이트 내용은 이 페이지에 게시됩니다.</p>
+<h2>6. 문의</h2>
+<p>본 처리방침에 대해 궁금한 점이 있으면 다음으로 연락하십시오: satmofix@outlook.com</p>
+</div>
+
+<div id="tr" class="section">
+<p><strong>Yürürlük tarihi: 2026-11-22</strong></p>
+<h2>1. Genel bakış</h2>
+<p>Satmofix, koordinatlar, ilgi noktaları ve iz kaydı için tamamen yerel bir GNSS/GPS aracıdır. Tüm temel işlevler çevrimdışı çalışır. Daha hızlı konum elde etmek için sistemin ağ destekli konumlandırmasını (Wi-Fi / baz istasyonu) kullanabilir. <strong>Hiçbir kullanıcı verisi toplanmayacak, yüklenmeyecek, iletilmeyecek veya sunucular ya da üçüncü taraflarla paylaşılmayacaktır.</strong></p>
+<h2>2. İzinler ve yerel veriler</h2>
+<p>Uygulama, temel işlevler için yalnızca hassas konum izni ister:</p>
+<ul>
+<li>Gerçek zamanlı GNSS koordinatlarını gösterme</li>
+<li>İlgi noktası ekleme ve kaydetme</li>
+<li>İz kaydetme</li>
+<li>Konum hesaplamaları yapma</li>
+</ul>
+<p>Tüm koordinatlar, ilgi noktaları, izler ve kullanıcı verileri yalnızca cihazınızda saklanır. Veriler hiçbir zaman internete veya buluta yüklenmez.</p>
+<h2>3. Üçüncü taraf veri toplama yok</h2>
+<ul>
+<li>Reklam yok</li>
+<li>Üçüncü taraf izleme, istatistik veya analiz SDK'sı yok</li>
+<li>Cihaz veya davranış verisi toplanmaz</li>
+<li>Konum, ilgi noktası veya iz verileri başkalarıyla paylaşılmaz</li>
+</ul>
+<h2>4. Kullanıcı kontrolü</h2>
+<p>Kaydedilmiş tüm izleri, ilgi noktalarını ve yerel verileri uygulama içinden istediğiniz zaman silebilirsiniz. Geliştiricinin yerel konum verilerinize erişme veya bunları görüntüleme imkânı yoktur.</p>
+<h2>5. Politika değişiklikleri</h2>
+<p>Bu gizlilik politikasını zaman zaman güncelleyebiliriz. Güncellemeler bu sayfada yayınlanacaktır.</p>
+<h2>6. İletişim</h2>
+<p>Bu gizlilik politikasıyla ilgili sorularınız için iletişim: satmofix@outlook.com</p>
+</div>
+
+<div id="hu" class="section">
+<p><strong>Hatálybalépés dátuma: 2026-11-22</strong></p>
+<h2>1. Áttekintés</h2>
+<p>A Satmofix teljesen helyi GNSS/GPS eszköz koordinátákhoz, útpontokhoz és nyomvonal-rögzítéshez. Minden alapfunkció offline működik. Az alkalmazás használhatja a rendszer hálózati asszisztált helymeghatározását (Wi-Fi / bázisállomás) a gyorsabb pozíció meghatározásához. <strong>Semmilyen felhasználói adatot nem gyűjtünk, töltünk fel, továbbítunk vagy osztunk meg szerverekkel vagy harmadik felekkel.</strong></p>
+<h2>2. Engedélyek és helyi adatok</h2>
+<p>Az alkalmazás csak a pontos helymeghatározás engedélyét kéri az alapfunkciókhoz:</p>
+<ul>
+<li>Valós idejű GNSS-koordináták megjelenítése</li>
+<li>Útpontok hozzáadása és mentése</li>
+<li>Nyomvonalak rögzítése</li>
+<li>Helymeghatározási számítások elvégzése</li>
+</ul>
+<p>Minden koordináta, útpont, nyomvonal és felhasználói adat kizárólag az Ön készülékén tárolódik. Az adatok soha nem kerülnek fel az internetre vagy a felhőbe.</p>
+<h2>3. Nincs harmadik féltől származó adatgyűjtés</h2>
+<ul>
+<li>Nincs reklám</li>
+<li>Nincs harmadik féltől származó követő, statisztikai vagy elemző SDK</li>
+<li>Nincs eszköz- vagy viselkedésadat-gyűjtés</li>
+<li>Nincs helyzet-, útpont- vagy nyomvonaladat megosztása másokkal</li>
+</ul>
+<h2>4. Felhasználói kontroll</h2>
+<p>A mentett nyomvonalakat, útpontokat és helyi adatokat bármikor törölheti az alkalmazásban. A fejlesztőnek semmilyen módja nincs arra, hogy hozzáférjen a helyi helyzetadataihoz vagy megtekintse azokat.</p>
+<h2>5. Szabályzatmódosítások</h2>
+<p>Ezt az adatvédelmi szabályzatot időnként frissíthetjük. A frissítések ezen az oldalon jelennek meg.</p>
+<h2>6. Kapcsolat</h2>
+<p>Ha kérdése van ezzel az adatvédelmi szabályzattal kapcsolatban, írjon ide: satmofix@outlook.com</p>
+</div>
+
+<div id="ar" class="section" dir="rtl">
+<p><strong>تاريخ السريان: 2026-11-22</strong></p>
+<h2>1. نظرة عامة</h2>
+<p>Satmofix أداة GNSS/GPS محلية بالكامل للإحداثيات ونقاط الطريق وتسجيل المسارات. تعمل جميع الوظائف الأساسية دون اتصال بالإنترنت. قد يستخدم التطبيق التحديد بمساعدة الشبكة الخاصة بالنظام (Wi-Fi / محطة أساس) للحصول على تحديد موقع أسرع. <strong>لن يتم جمع أي بيانات للمستخدم أو رفعها أو نقلها أو مشاركتها مع خوادم أو أطراف ثالثة.</strong></p>
+<h2>2. الأذونات والبيانات المحلية</h2>
+<p>يطلب التطبيق إذن الموقع الدقيق فقط للوظائف الأساسية:</p>
+<ul>
+<li>عرض إحداثيات GNSS في الوقت الفعلي</li>
+<li>إضافة نقاط الطريق وحفظها</li>
+<li>تسجيل المسارات</li>
+<li>إجراء حسابات الموقع</li>
+</ul>
+<p>تُحفظ جميع الإحداثيات ونقاط الطريق والمسارات وبيانات المستخدم على جهازك فقط. لن تُرفع البيانات أبداً إلى الإنترنت أو إلى السحابة.</p>
+<h2>3. لا جمع للبيانات من أطراف ثالثة</h2>
+<ul>
+<li>لا إعلانات</li>
+<li>لا SDK تتبع أو إحصاءات أو تحليلات من أطراف ثالثة</li>
+<li>لا جمع لبيانات الجهاز أو السلوك</li>
+<li>لا مشاركة للموقع أو نقاط الطريق أو المسارات مع الآخرين</li>
+</ul>
+<h2>4. تحكم المستخدم</h2>
+<p>يمكنك حذف جميع المسارات ونقاط الطريق والبيانات المحلية المحفوظة داخل التطبيق في أي وقت. لا يملك المطور أي وسيلة للوصول إلى بيانات موقعك المحلية أو الاطلاع عليها.</p>
+<h2>5. تغييرات السياسة</h2>
+<p>قد نحدّث سياسة الخصوصية هذه من وقت لآخر. ستُنشر التحديثات على هذه الصفحة.</p>
+<h2>6. التواصل</h2>
+<p>إذا كانت لديك أسئلة حول سياسة الخصوصية هذه، تواصل عبر: satmofix@outlook.com</p>
+</div>
+
+<div id="fa" class="section" dir="rtl">
+<p><strong>تاریخ اجرا: 2026-11-22</strong></p>
+<h2>۱. مرور کلی</h2>
+<p>Satmofix یک ابزار کاملاً محلی GNSS/GPS برای مختصات، نقاط راه و ثبت مسیر است. همهٔ عملکردهای اصلی به‌صورت آفلاین کار می‌کنند. برنامه ممکن است از موقعیت‌یابی شبکهٔ سیستم (Wi-Fi / ایستگاه مخابراتی) برای دستیابی سریع‌تر به موقعیت استفاده کند. <strong>هیچ داده‌ای از کاربر جمع‌آوری، بارگذاری، ارسال یا با سرورها و اشخاص ثالث به اشتراک گذاشته نمی‌شود.</strong></p>
+<h2>۲. مجوزها و داده‌های محلی</h2>
+<p>برنامه تنها مجوز موقعیت مکانی دقیق را برای عملکردهای اصلی درخواست می‌کند:</p>
+<ul>
+<li>نمایش مختصات GNSS به‌صورت زنده</li>
+<li>افزودن و ذخیرهٔ نقاط راه</li>
+<li>ثبت مسیرها</li>
+<li>انجام محاسبات موقعیت</li>
+</ul>
+<p>همهٔ مختصات، نقاط راه، مسیرها و داده‌های کاربر فقط روی دستگاه شما ذخیره می‌شوند. داده‌ها هرگز به اینترنت یا فضای ابری بارگذاری نمی‌شوند.</p>
+<h2>۳. بدون جمع‌آوری داده توسط اشخاص ثالث</h2>
+<ul>
+<li>بدون تبلیغات</li>
+<li>بدون SDK ردیابی، آمار یا تحلیل از اشخاص ثالث</li>
+<li>بدون جمع‌آوری داده‌های دستگاه یا رفتار</li>
+<li>بدون به اشتراک‌گذاری موقعیت، نقاط راه یا مسیرها با دیگران</li>
+</ul>
+<h2>۴. کنترل کاربر</h2>
+<p>می‌توانید در هر زمان تمام مسیرها، نقاط راه و داده‌های محلی ذخیره‌شده را در برنامه حذف کنید. توسعه‌دهنده هیچ راهی برای دسترسی یا مشاهدهٔ داده‌های موقعیت محلی شما ندارد.</p>
+<h2>۵. تغییرات سیاست</h2>
+<p>ممکن است این سیاست حریم خصوصی را هر از چند گاهی به‌روزرسانی کنیم. به‌روزرسانی‌ها در همین صفحه منتشر می‌شوند.</p>
+<h2>۶. تماس</h2>
+<p>اگر دربارهٔ این سیاست حریم خصوصی سؤالی دارید، تماس بگیرید: satmofix@outlook.com</p>
+</div>
+
 <script>
-function switchLang(lang){
-  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'))
-  document.getElementById(lang).classList.add('active')
-  document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.remove('active'))
-  event.target.classList.add('active')
+var TITLES = {
+  "en": "Privacy Policy",
+  "zh": "隐私政策",
+  "es": "Política de privacidad",
+  "pt-PT": "Política de Privacidade",
+  "pt-BR": "Política de Privacidade",
+  "ru": "Политика конфиденциальности",
+  "ja": "プライバシーポリシー",
+  "de": "Datenschutzerklärung",
+  "fr": "Politique de confidentialité",
+  "it": "Informativa sulla privacy",
+  "ko": "개인정보 처리방침",
+  "tr": "Gizlilik Politikası",
+  "hu": "Adatvédelmi szabályzat",
+  "ar": "سياسة الخصوصية",
+  "fa": "سیاست حریم خصوصی"
+};
+var RTL = {"ar": true, "fa": true};
+
+function switchLang(lang, btn){
+  document.querySelectorAll('.section').forEach(function(s){
+    s.classList.remove('active');
+  });
+  var target = document.getElementById(lang);
+  if(target){ target.classList.add('active'); }
+  document.querySelectorAll('.lang-switch button').forEach(function(b){
+    b.classList.remove('active');
+  });
+  if(btn){ btn.classList.add('active'); }
+  document.getElementById('policy-title').textContent = TITLES[lang] || TITLES.en;
+  document.title = (TITLES[lang] || TITLES.en) + ' - Satmofix';
+  document.documentElement.lang = lang;
+  document.documentElement.dir = RTL[lang] ? 'rtl' : 'ltr';
 }
 </script>
 </body>
