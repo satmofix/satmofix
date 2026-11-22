@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - Satmofix</title>
+<style>
+body{max-width:850px;margin:2rem auto;padding:0 16px;font-family:Arial,sans-serif;line-height:1.7;color:#222;}
+h1{text-align:center;}
+.lang-switch{margin-bottom:2rem;text-align:center;}
+button{padding:6px 12px;margin:0 4px;cursor:pointer;border:1px solid #333;background:#fff;border-radius:4px;}
+button.active{background:#222;color:#fff;}
+.section{display:none;}
+.section.active{display:block;}
+p,li{margin:0.7rem 0;}
+</style>
+</head>
+<body>
+<h1>Privacy Policy / 隐私政策</h1>
+<div class="lang-switch">
+  <button class="active" onclick="switchLang('en')">English</button>
+  <button onclick="switchLang('zh')">中文</button>
+</div>
+
+<div id="en" class="section active">
+<p><strong>Effective Date: 2026-11-22</strong></p>
+<h2>1. Overview</h2>
+<p>Satmofix is a standalone GNSS/GPS coordinate and track recording tool. This app works fully offline and <strong>does NOT collect, upload, transmit, or share any user data to any server or third party</strong>.</p>
+
+<h2>2. Permission and Local Data</h2>
+<p>The app only requests precise location permission on your device for core functions:</p>
+<ul>
+<li>Display real-time GNSS coordinates</li>
+<li>Record local travel tracks</li>
+<li>Provide positioning-related calculation</li>
+</ul>
+<p><strong>All location data, track records, and user-generated content are stored ONLY locally on your device.</strong> No data leaves your phone. No cloud upload, no background transmission, no data collection.</p>
+
+<h2>3. No Third-Party Services</h2>
+<p>This application:</p>
+<ul>
+<li>Does not contain advertisements</li>
+<li>Does not embed any third-party SDK</li>
+<li>Does not collect device information, analytics, or user behavior data</li>
+<li>Does not share any data with third parties</li>
+</ul>
+
+<h2>4. User Data Control</h2>
+<p>You may delete all local track data and app data at any time inside the application. We have no access to your local data.</p>
+
+<h2>5. Privacy Policy Updates</h2>
+<p>We may update this privacy policy occasionally. Changes will be displayed on this page.</p>
+
+<h2>6. Contact</h2>
+<p>If you have any privacy-related questions, please contact: <br>
+<strong>satmofix@outlook.com</strong></p>
+</div>
+
+
+<div id="zh" class="section">
+<p><strong>生效日期：2026-11-22</strong></p>
+<h2>一、概述</h2>
+<p>Satmofix 是一款纯本地 GNSS / GPS 坐标与轨迹记录工具。本应用<strong>完全离线运行，不会收集、上传、传输、分享任何用户数据至服务器或第三方平台</strong>。</p>
+
+<h2>二、权限与本地数据说明</h2>
+<p>本应用仅申请设备精准定位权限，用于实现核心功能：</p>
+<ul>
+<li>显示实时GNSS坐标</li>
+<li>记录本地轨迹路线</li>
+<li>完成定位相关计算</li>
+</ul>
+<p><strong>所有定位数据、轨迹记录、用户操作数据，仅保存在您的手机本地设备中。</strong>所有数据不会联网上传、不会后台传输、不会同步至云端。</p>
+
+<h2>三、无第三方数据收集</h2>
+<p>本应用：</p>
+<ul>
+<li>不含任何广告</li>
+<li>不含任何第三方统计、追踪、分析SDK</li>
+<li>不会收集设备信息、用户行为信息</li>
+<li>不会向任何第三方共享用户数据</li>
+</ul>
+
+<h2>四、用户数据控制权</h2>
+<p>您可在应用内随时手动删除全部轨迹数据与本地缓存数据。开发者无法查看、获取或管理您设备内的任何数据。</p>
+
+<h2>五、政策更新</h2>
+<p>我们可能会不定期更新本隐私政策，更新内容将展示在本页面。</p>
+
+<h2>六、联系方式</h2>
+<p>如您对隐私条款有任何疑问，可联系官方邮箱：<br>
+<strong>satmofix@outlook.com</strong></p>
+</div>
+
+<script>
+function switchLang(lang) {
+  document.querySelectorAll('.section').forEach(el=>el.classList.remove('active'))
+  document.getElementById(lang).classList.add('active')
+  document.querySelectorAll('.lang-switch button').forEach(btn=>btn.classList.remove('active'))
+  event.target.classList.add('active')
+}
+</script>
+</body>
+</html>
