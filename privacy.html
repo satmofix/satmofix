@@ -18,84 +18,55 @@ p,li{margin:0.7rem 0;}
 <body>
 <h1>Privacy Policy / 隐私政策</h1>
 <div class="lang-switch">
-  <button class="active" onclick="switchLang('en')">English</button>
-  <button onclick="switchLang('zh')">中文</button>
+<button class="active" onclick="switchLang('en')">English</button>
+<button onclick="switchLang('zh')">中文</button>
 </div>
 
 <div id="en" class="section active">
 <p><strong>Effective Date: 2026-11-22</strong></p>
-<h2>1. Overview</h2>
-<p>Satmofix is a standalone GNSS/GPS coordinate and track recording tool. This app works fully offline and <strong>does NOT collect, upload, transmit, or share any user data to any server or third party</strong>.</p>
-
-<h2>2. Permission and Local Data</h2>
-<p>The app only requests precise location permission on your device for core functions:</p>
+<h2>Overview</h2>
+<p>Satmofix is a GNSS positioning tool. It requests precise location permission to display GNSS coordinates, record waypoints and tracks.</p>
+<p>The app may use network-assisted positioning (cell/Wi‑Fi) for faster location acquisition. This is provided by your device system.</p>
+<p><strong>All your location data, waypoints and track records are stored locally on your device only. They will never be uploaded to remote servers, sent to cloud services, or shared with any third parties.</strong></p>
+<h2>Data stored locally</h2>
 <ul>
-<li>Display real-time GNSS coordinates</li>
-<li>Record local travel tracks</li>
-<li>Provide positioning-related calculation</li>
+<li>GNSS coordinate information</li>
+<li>Waypoints (marked points)</li>
+<li>Track path records</li>
 </ul>
-<p><strong>All location data, track records, and user-generated content are stored ONLY locally on your device.</strong> No data leaves your phone. No cloud upload, no background transmission, no data collection.</p>
-
-<h2>3. No Third-Party Services</h2>
-<p>This application:</p>
+<h2>Permissions explanation</h2>
 <ul>
-<li>Does not contain advertisements</li>
-<li>Does not embed any third-party SDK</li>
-<li>Does not collect device information, analytics, or user behavior data</li>
-<li>Does not share any data with third parties</li>
+<li>Location: Required to read GNSS, record waypoints and tracks.</li>
+<li>Network: Only for system-assisted positioning, we do not collect or upload your location data.</li>
 </ul>
-
-<h2>4. User Data Control</h2>
-<p>You may delete all local track data and app data at any time inside the application. We have no access to your local data.</p>
-
-<h2>5. Privacy Policy Updates</h2>
-<p>We may update this privacy policy occasionally. Changes will be displayed on this page.</p>
-
-<h2>6. Contact</h2>
-<p>If you have any privacy-related questions, please contact: <br>
-<strong>satmofix@outlook.com</strong></p>
+<p>No user accounts, no cloud sync, no analytics tracking.</p>
 </div>
-
 
 <div id="zh" class="section">
 <p><strong>生效日期：2026-11-22</strong></p>
-<h2>一、概述</h2>
-<p>Satmofix 是一款纯本地 GNSS / GPS 坐标与轨迹记录工具。本应用<strong>完全离线运行，不会收集、上传、传输、分享任何用户数据至服务器或第三方平台</strong>。</p>
-
-<h2>二、权限与本地数据说明</h2>
-<p>本应用仅申请设备精准定位权限，用于实现核心功能：</p>
+<h2>概述</h2>
+<p>Satmofix 是GNSS定位工具，需要精准定位权限，用来显示GNSS坐标、记录航点（打点）和轨迹。</p>
+<p>应用可以使用网络辅助定位（基站/WiFi）加快定位锁定速度，该能力由设备系统提供。</p>
+<p><strong>你的所有位置数据、航点、轨迹记录仅保存在本机，不会上传到远程服务器、云端，也不会分享给任何第三方。</strong></p>
+<h2>本地存储内容</h2>
 <ul>
-<li>显示实时GNSS坐标</li>
-<li>记录本地轨迹路线</li>
-<li>完成定位相关计算</li>
+<li>GNSS坐标信息</li>
+<li>航点（打点标记）</li>
+<li>轨迹路径记录</li>
 </ul>
-<p><strong>所有定位数据、轨迹记录、用户操作数据，仅保存在您的手机本地设备中。</strong>所有数据不会联网上传、不会后台传输、不会同步至云端。</p>
-
-<h2>三、无第三方数据收集</h2>
-<p>本应用：</p>
+<h2>权限说明</h2>
 <ul>
-<li>不含任何广告</li>
-<li>不含任何第三方统计、追踪、分析SDK</li>
-<li>不会收集设备信息、用户行为信息</li>
-<li>不会向任何第三方共享用户数据</li>
+<li>位置权限：读取GNSS、记录航点和轨迹必需</li>
+<li>网络权限：仅用于系统辅助定位，我们不会收集、上传你的位置信息</li>
 </ul>
-
-<h2>四、用户数据控制权</h2>
-<p>您可在应用内随时手动删除全部轨迹数据与本地缓存数据。开发者无法查看、获取或管理您设备内的任何数据。</p>
-
-<h2>五、政策更新</h2>
-<p>我们可能会不定期更新本隐私政策，更新内容将展示在本页面。</p>
-
-<h2>六、联系方式</h2>
-<p>如您对隐私条款有任何疑问，可联系官方邮箱：<br>
-<strong>satmofix@outlook.com</strong></p>
+<p>无账号系统、无云端同步、无数据统计追踪。</p>
 </div>
 
 <script>
-function switchLang(lang) {
-  document.querySelectorAll('.section').forEach(el=>el.classList.remove('active'))
+function switchLang(lang){
+  document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'))
   document.getElementById(lang).classList.add('active')
-  document.querySelectorAll('.lang-switch button').forEach(btn=>btn.classList.remove('active'))
+  document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.remove('active'))
   event.target.classList.add('active')
 }
 </script>
